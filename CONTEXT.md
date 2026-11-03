@@ -166,6 +166,22 @@
 - **WhatsApp Principal:** `+55 (63) 9 9258-1001`
 - **WhatsApp Secundário:** `+55 (61) 9 9242-8803`
 - **LinkedIn:** `https://www.linkedin.com/in/osvaldo-queta-fernando`
+- **GitHub:** `https://github.com/osvaldoqueta`
+- **Instagram Oficial:** `https://www.instagram.com/foxtech.ia`
 - **Localização:** Juiz de Fora / MG (Atuação Remota Nacional e Internacional)
 - **CRECI:** CRECI-MG / TTI
+
+### 2.10. Fase 10: Páginas Legais Trilíngues (LGPD/GDPR), Redes Sociais, SEO Técnico & Instagram `@foxtech.ia` (Concluída)
+- [x] **Páginas Completas de Política de Privacidade (`/privacidade`) e Termos de Uso (`/termos`):**
+  - Dicionário jurídico e de governança completo em 3 idiomas (`pt`, `en`, `es`) em `lib/i18n/legal.ts` cobrindo LGPD (Lei nº 13.709/2018), GDPR (UE 2016/679), CCPA, ISO/IEC 27001, COBIT, ITIL v4, arquitetura Zero-Trust, uso da estação Power BI Live e SLA 24/7.
+  - Componente interativo `components/LegalDocumentView.tsx` com índice navegável lateral (TOC), card do Encarregado de Dados (DPO) e troca instantânea de idioma.
+  - Rotas Next.js App Router `app/privacidade/page.tsx` e `app/termos/page.tsx` conectadas ao `Footer.tsx` e `Navbar.tsx`.
+- [x] **Links Oficiais de Redes Sociais no Rodapé e Schema.org:**
+  - GitHub configurado para `https://github.com/osvaldoqueta`.
+  - Instagram configurado para `https://www.instagram.com/foxtech.ia`.
+  - LinkedIn configurado para `https://www.linkedin.com/in/osvaldo-queta-fernando/`.
+- [x] **SEO Técnico Avançado para Indexação Global:**
+  - `app/robots.ts` (`/robots.txt`), `app/sitemap.ts` (`/sitemap.xml` com todas as rotas e idiomas) e `app/manifest.ts` (`/manifest.webmanifest`).
+  - `app/layout.tsx` enriquecido com `Viewport`, `alternates` (`canonical` + `hreflang`), diretivas `googleBot` (`max-image-preview: large`, `max-snippet: -1`) e `@graph` JSON-LD (`Organization`, `ProfessionalService`, `Person`, `WebSite`).
+
 

@@ -51,8 +51,18 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLanguageState(lang);
     try {
       localStorage.setItem(STORAGE_KEY, lang);
-      // Update HTML lang attribute dynamically for accessibility & SEO
+      // Update HTML lang attribute and document metadata dynamically for accessibility & SEO
       document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'en' ? 'en-US' : 'es-ES';
+      const dict = dictionaries[lang];
+      if (dict?.metadata) {
+        if (window.location.pathname === '/') {
+          document.title = dict.metadata.title;
+        }
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && window.location.pathname === '/') {
+          metaDesc.setAttribute('content', dict.metadata.description);
+        }
+      }
     } catch {
       // Ignored for SSR / private browsing
     }

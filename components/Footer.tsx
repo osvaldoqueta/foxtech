@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
   Send,
   Phone,
@@ -190,24 +191,24 @@ _Enviado via Website Oficial FOXTECH_`;
             </h4>
             <ul className="flex flex-wrap md:flex-col gap-x-5 gap-y-2 text-xs text-[#A8AFB8]">
               <li>
-                <a href="#" className="hover:text-[#FF6800] transition-colors">
+                <Link href="/" className="hover:text-[#FF6800] transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#servicos" className="hover:text-[#FF6800] transition-colors">
+                <Link href="/#servicos" className="hover:text-[#FF6800] transition-colors">
                   {language === 'en' ? 'Solutions' : language === 'es' ? 'Soluciones' : 'Soluções'}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-[#FF6800] transition-colors">
+                <Link href="/#portfolio" className="hover:text-[#FF6800] transition-colors">
                   {t.navbar.portfolio}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contato" className="hover:text-[#FF6800] transition-colors">
+                <Link href="/#contato" className="hover:text-[#FF6800] transition-colors">
                   Direct Contact
-                </a>
+                </Link>
               </li>
               <li className="pt-1 flex items-center gap-3 text-[11px] text-[#687280]">
                 <a
@@ -254,10 +255,10 @@ _Enviado via Website Oficial FOXTECH_`;
 
               {/* GitHub */}
               <a
-                href="https://github.com"
+                href="https://github.com/osvaldoqueta"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub FOXTECH"
+                aria-label="GitHub Osvaldo Queta FOXTECH"
                 className="w-8 h-8 rounded-lg bg-[#11141F] border border-white/10 hover:border-[#FF6800] text-[#A8AFB8] hover:text-white flex items-center justify-center transition-all"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -280,10 +281,10 @@ _Enviado via Website Oficial FOXTECH_`;
 
               {/* Instagram */}
               <a
-                href="https://foxstorebr.com"
+                href="https://www.instagram.com/foxtech.ia"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram FOXTECH"
+                aria-label="Instagram FOXTECH (@foxtech.ia)"
                 className="w-8 h-8 rounded-lg bg-[#11141F] border border-white/10 hover:border-[#FF6800] text-[#A8AFB8] hover:text-white flex items-center justify-center transition-all"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -336,20 +337,20 @@ _Enviado via Website Oficial FOXTECH_`;
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#687280]">
           <p>{t.footer.rights}</p>
           <div className="flex items-center gap-6">
-            <a href="#contato" className="hover:text-[#A8AFB8] transition-colors">
+            <Link href="/privacidade" className="hover:text-[#FF6800] transition-colors">
               {language === 'en'
                 ? 'Privacy Policy'
                 : language === 'es'
                 ? 'Política de Privacidad'
                 : 'Política de Privacidade'}
-            </a>
-            <a href="#contato" className="hover:text-[#A8AFB8] transition-colors">
+            </Link>
+            <Link href="/termos" className="hover:text-[#FF6800] transition-colors">
               {language === 'en'
                 ? 'Terms of Use'
                 : language === 'es'
                 ? 'Términos de Uso'
                 : 'Termos de Uso'}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

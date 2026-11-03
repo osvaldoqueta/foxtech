@@ -46,17 +46,17 @@ export default function Navbar() {
   }, []);
 
   const standardLinks = [
-    { id: 'home', name: t.navbar.home || 'Home', href: '#' },
-    { id: 'services', name: t.navbar.services || 'Soluções & Serviços', href: '#servicos' },
-    { id: 'portfolio', name: t.navbar.portfolio || 'Portfólio', href: '#portfolio' },
-    { id: 'contact', name: t.navbar.contact || 'Direct Contact', href: '#contato' },
+    { id: 'home', name: t.navbar.home || 'Home', href: '/' },
+    { id: 'services', name: t.navbar.services || 'Soluções & Serviços', href: '/#servicos' },
+    { id: 'portfolio', name: t.navbar.portfolio || 'Portfólio', href: '/#portfolio' },
+    { id: 'contact', name: t.navbar.contact || 'Direct Contact', href: '/#contato' },
   ];
 
   const extraLinks = [
-    { name: t.navbar.powerbi, href: '#powerbi', icon: BarChart3, desc: 'Dashboards & Engenharia' },
-    { name: 'Sobre a FOXTECH', href: '#about', icon: Layers, desc: 'Expertise & Capacidades' },
-    { name: t.navbar.pricing, href: '#planos', icon: CreditCard, desc: 'Planos & Contratação' },
-    { name: t.navbar.timeline, href: '#trajetoria', icon: Briefcase, desc: '+16 Anos de Liderança' },
+    { name: t.navbar.powerbi, href: '/#powerbi', icon: BarChart3, desc: 'Dashboards & Engenharia' },
+    { name: 'Sobre a FOXTECH', href: '/#about', icon: Layers, desc: 'Expertise & Capacidades' },
+    { name: t.navbar.pricing, href: '/#planos', icon: CreditCard, desc: 'Planos & Contratação' },
+    { name: t.navbar.timeline, href: '/#trajetoria', icon: Briefcase, desc: '+16 Anos de Liderança' },
   ];
 
   return (
